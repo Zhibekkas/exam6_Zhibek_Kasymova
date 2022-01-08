@@ -8,7 +8,7 @@
      <div class="card-body">
          <h5 class="card-title">Guest: {{ guest.name }}
              <a href="{% url 'edit' guest.pk %}" class="card-link"><i class="fas fa-edit"></i></a>
-             <a href="#" class="card-link"><i class="fas fa-trash-alt"></i></a></h5>
+             <a href="{% url 'task_delete' guest.pk %}" class="card-link"><i class="fas fa-trash-alt"></i></a></h5>
          <h6 class="card-subtitle mb-2 text-muted">Email: {{ guest.email }}</h6>
          <p class="card-text">{{ guest.text }}</p>
   </div>
