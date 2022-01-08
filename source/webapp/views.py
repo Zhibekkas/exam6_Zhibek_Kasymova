@@ -5,7 +5,7 @@ from webapp.models import Guest, status_choices
 
 
 def index(request):
-    guests = Guest.objects.order_by("name")
+    guests = Guest.objects.order_by("creation_date")
     return render(request, 'index.html', {'guests': guests})
 
 

@@ -4,13 +4,13 @@
 {% block content %}
     <h1 class="text-center">Guest Book</h1>
  {% for guest in guests %}
-     <div class="card" style="width: 18rem;">
+     <div class="card" style="width: 25rem;">
      <div class="card-body">
          <h5 class="card-title">Guest: {{ guest.name }}
-             <a href="#" class="card-link"><i class="fas fa-user-plus"></i></a>
-             <a href="#" class="card-link"><i class="fas fa-edit"></i></a></h5>
+             <a href="#" class="card-link"><i class="fas fa-edit"></i></a>
+             <a href="#" class="card-link"><i class="fas fa-trash-alt"></i></a></h5>
          <h6 class="card-subtitle mb-2 text-muted">Email: {{ guest.email }}</h6>
-    <p class="card-text">{{ guest.text }}</p>
+         <p class="card-text">{{ guest.text }}</p>
   </div>
 </div>
     {% endfor %}

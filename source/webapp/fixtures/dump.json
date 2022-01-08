@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.guest",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "text": "The next generation of the web’s favorite icon library + toolkit is now available as a Beta release! Try out the Free version.",
+    "creation_date": "2022-01-08T06:59:23.306Z",
+    "edition_date": "2022-01-08T06:59:23.306Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 2,
+  "fields": {
+    "name": "Jane Smith",
+    "email": "jane@gmail.com",
+    "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "creation_date": "2022-01-08T07:04:52.095Z",
+    "edition_date": "2022-01-08T07:04:52.095Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 3,
+  "fields": {
+    "name": "Mike Scott",
+    "email": "scott@gmail.com",
+    "text": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "creation_date": "2022-01-08T07:05:42.354Z",
+    "edition_date": "2022-01-08T07:05:42.354Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 4,
+  "fields": {
+    "name": "Pamella Halpert",
+    "email": "halpert@mail.ru",
+    "text": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "creation_date": "2022-01-08T07:06:46.237Z",
+    "edition_date": "2022-01-08T07:06:46.237Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 5,
+  "fields": {
+    "name": "Dwight Schrute",
+    "email": "dwight@mail.ru",
+    "text": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "creation_date": "2022-01-08T07:07:25.139Z",
+    "edition_date": "2022-01-08T07:07:25.139Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$jtN8Jo7edJ3YONWV00yNR4$IOisjdckOnNkICd0aK4GwVnjvKfPT7c23Bwto5yZgSI=",
+    "last_login": "2022-01-08T06:49:09.248Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "jibekkas.jk@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-01-08T06:48:11.135Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
