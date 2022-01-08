@@ -11,6 +11,21 @@ def index(request):
     return render(request, 'index.html', {'guests': guests})
 
 
+def add(request):
+    if request.method == 'GET':
+        form = GuestForm()
+        return render(request, 'add_guest.html', {'form': form})
+    else:
+        form = GuestForm(data=request.POST)
+        if form.is_valid():
+            name = form.cleaned_data.get('name')
+            email = form.cleaned_data.get('email')
+            text = form.cleaned_data.get('text')
+            new_guest = Guest.objects.create(name=name, email=email, text=text)
+            return redirect('index', pk=new_guest.pk)
+        return render(request, 'add_guest.html', {'form': form})
+
+
 def edit(request, pk):
     guest = get_object_or_404(Guest, pk=pk)
     if request.method == 'GET':
@@ -33,3 +48,10 @@ def edit(request, pk):
         return render(request, 'edit.html', {"guest": guest, "form": form})
 
 
+def task_delete(request, pk):
+    guest = get_object_or_404(Guest, pk=pk)
+    if request.method == 'GET':
+        return render(request, "delete_guest.html", {'guest': guest})
+    else:
+        guest.delete()
+        return redirect("index")

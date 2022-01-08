@@ -2,13 +2,13 @@
 {% block title %}Update guest information{% endblock %}
 {% block nav %}
  <li class="nav-item">
-        <a class="nav-link" href="{% url 'index' guest.pk %}">Home</a>
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
     </li>
 {% endblock %}
 {% block content %}
 <h1 class = 'text-center text-primary text-uppercase'>Update Guest</h1>
 <form method="post">
    {%include "partial/form.html" %}
-    <input type="submit" value="Update"/>
+    <input type="submit" value="Edit"/>
 </form>
 {% endblock %}

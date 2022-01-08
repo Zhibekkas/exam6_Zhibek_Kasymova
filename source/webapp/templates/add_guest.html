@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Add guest{% endblock %}
+{% block nav %}{% endblock %}
+{% block content %}
+<h1 class = 'text-center text-primary text-uppercase'>Add new guest</h1>
+<form method="post">
+    {%include "partial/form.html" %}
+    <input type="submit" value="Add"/>
+</form>
+{% endblock %}
