@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-
+{% block title %}Delete Guest{% endblock %}
 {% block content %}
-    <form action="{% url "task_delete" guest.pk %}" method="POST">
+    <form action="{% url "guest_delete" guest.pk %}" method="POST">
     {% csrf_token %}
         <h2>Are you sure you want to delete {{ guest.name }}?</h2>
         <input class="btn btn-primary mb-3" type="submit" value="YES">
